@@ -1,7 +1,7 @@
-## Sentiment_analysis
+# Sentiment_analysis
 
 Sentiment Analysis computationally categorizes the opinions expressed in a piece of text. In this project, a simple sentiment analysis deep learning model is built using LSTM (long short-term memory). LSTM is meant to solve the vanishing gradient problem by remembering long-term historical data as a default behavior. This is the reason why we choose to use LSTM over simple RNN models for sentiment analysis. 
-# Steps for building a deep-learning model for sentiment analysis:
+## Steps for building a deep-learning model for sentiment analysis:
 1. Data preprocessing: For this project, we used IMDb dataset in which there are two columns: text and label. This is a simple dataset in which a label of "0" indicates that the review/text is a negative opinion whereas "1" indicates that the review is a positive opinion.
 2. Data vectorization: We are aware that machines understand numbers better than words. So, in order to give each word in the statement some weight and enable the machine to interpret the review's sentiment, we must transform all of the reviews into a sequence of numbers. To achieve this, we make use of the tokenizer module found in keras_preprocessing.text.
 3. Splitting the data: Only a model's performance on its test data can be used to test it or to compare it to other models. It is necessary to separate the data into train and test sets. The model is trained using train data, and the model's accuracy is evaluated using test data. We utilize 80% of the data as a train and 20% of the data as a test as a general rule of thumb.
